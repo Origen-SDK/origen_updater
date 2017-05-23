@@ -10,8 +10,7 @@ class OrigenUpdaterApplication < Origen::Application
   self.namespace  = "OrigenUpdater"
   config.name     = "origen_updater"
   config.initials = "OrigenUpdater"
-  # Change this to point to the revision control repository for this plugin
-  #config.rc_url   = "ssh://git@github.com:myaccount/origen_updater.git" 
+  config.rc_url   = "git@github.com:Origen-SDK/origen_updater.git"
   config.release_externally = true
 
   # To enable deployment of your documentation to a web server (via the 'origen web'
