@@ -2,7 +2,7 @@
 case @command
 
 when "update"
-  require "#{Origen.root!}/lib/origen_updater/commands/update"
+  require "#{Origen.root!}/lib/origen_updater/update"
   # Important to exit when a command has been fulfilled or else Origen core will try and execute it
   exit 0
 
