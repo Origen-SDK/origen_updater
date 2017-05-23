@@ -1,1 +1,1 @@
-puts "Hello, OrigenUpdater here!"
+puts 'Hello, OrigenUpdater here!'
