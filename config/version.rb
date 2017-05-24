@@ -1,6 +1,6 @@
 module OrigenUpdater
   MAJOR = 0
-  MINOR = 3
+  MINOR = 5
   BUGFIX = 0
   DEV = nil
 
