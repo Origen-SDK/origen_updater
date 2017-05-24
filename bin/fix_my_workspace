@@ -31,7 +31,7 @@ else
 
           local_dir = File.join(local_gem_dir, Pathname.new(spec.gem_dir).relative_path_from(gem_dir))
           FileUtils.mkdir_p local_dir
-          FileUtils.cp_r(spec.gem_dir, local_dir)
+          FileUtils.cp_r("#{spec.gem_dir}/.", local_dir)
 
           local_file = Pathname.new(File.join(local_gem_dir, Pathname.new(spec.cache_file).relative_path_from(gem_dir)))
           FileUtils.mkdir_p local_file.dirname
@@ -40,7 +40,7 @@ else
           if spec.extension_dir && File.exist?(spec.extension_dir)
             local_dir = File.join(local_gem_dir, Pathname.new(spec.extension_dir).relative_path_from(gem_dir))
             FileUtils.mkdir_p local_dir
-            FileUtils.cp_r(spec.extension_dir, local_dir)
+            FileUtils.cp_r("#{spec.extension_dir}/.", local_dir)
           end
 
           local_file = Pathname.new(File.join(local_gem_dir, Pathname.new(spec.spec_file).relative_path_from(gem_dir)))
