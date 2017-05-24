@@ -2,7 +2,7 @@
 $VERBOSE = nil  # Don't care about world writable dir warnings and the like
 
 if $_fix_my_workspace_version_check
-  $_fix_my_workspace_version = '1.2.3'
+  $_fix_my_workspace_version = '0.3.0'
 else
   require 'origen'
 
