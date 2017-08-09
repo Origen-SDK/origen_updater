@@ -5,8 +5,8 @@ if $_fix_my_workspace_version_check
   $_fix_my_workspace_version = '0.6.0'
 else
   if File.exists?(File.expand_path('../../lib/origen.rb', __FILE__))
-    # If this script is being run from within an origen application, use that Origen application,
-    # not the system installed origen version.
+    # If this script is being run from within an origen-core workspace, use that Origen-core,
+    # not the system-installed origen-core version.
     $LOAD_PATH.unshift(File.expand_path('../../lib', __FILE__))
     require 'origen'
   else
