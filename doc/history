@@ -1,3 +1,15 @@
+<a class="anchor release_tag" name="v0_7_0"></a>
+<h1><a href="#v0_7_0">Tag: v0.7.0</a></h1>
+
+##### Branch: 'master'
+
+##### by Engelken Corey-B50956 on 10-Aug-2017 09:53AM
+
+
+Small enhancement to bin/fix\_my\_workspace script to detect if it is being run from an
+Origen-core workspace and, if so, to use the Origen located at that workspace instead of
+the system-gem Origen.
+
 <a class="anchor release_tag" name="v0_6_0"></a>
 <h1><a href="#v0_6_0">Tag: v0.6.0</a></h1>
 
